@@ -18,7 +18,7 @@ SignOutBtn.onclick = () => auth.signOut();
 
 auth.onAuthStateChanged((user) => {
    if (user) {
-      console.log(user);
+      //    go to indexed DB firebase local storgae to see user details
       whenSignedIn.hidden = false;
       whenSignedOut.hidden = true;
       userDetails.innerHTML = `
